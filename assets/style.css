@@ -1,0 +1,176 @@
+/* typography */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#nav__content a {
+  text-decoration: none;
+  padding: 10px 10px 6px 10px;
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+}
+
+#footer__content {
+  font-size: 10pt;
+}
+
+#footer__content h3 {
+  text-transform: uppercase;
+}
+
+address {
+  font-style: normal;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+@media (max-width: 968px){ /* 968 = content width / 0.8 */
+  .mobile_left {
+    text-align: left;
+  }
+  
+  .mobile_center {
+    text-align: center;
+  }
+  
+  .mobile_right {
+    text-align: right;
+  }
+}
+
+/* multimedia */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* colors and branding */
+#header__stripe {
+  background-color: white;
+  background-image: url("/assets/EVIL%20Ethics%20Values%20Information%20Law.png");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+}
+
+#header__content h1 {
+  color: rgb(95 40 65 / 72%);
+  background: rgb(255 255 255 / 80%);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 968px){ /* 968 = content width / 0.8 */
+  #header__stripe {
+    padding-top: 285px;
+    background-position: center center;
+  }
+  
+  #header__content h1 {
+    display: none;
+  }
+}
+
+#nav__stripe {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+#nav__content a {
+  color: #444;
+}
+
+#nav__content a:hover {
+  border-bottom: 4px solid #444;
+}
+
+#news__stripe,
+#main__stripe {
+  background: white;
+}
+
+body {
+  background: #eee;
+}
+
+a {
+  color: blue;
+}
+
+/* layout */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#header__stripe,
+#nav__stripe,
+#news__stripe,
+#main__stripe,
+#footer__stripe {
+  overflow: hidden;
+}
+
+#header__content,
+#nav__content,
+#news__content,
+#main__content,
+#footer__content {
+  max-width: 775px;
+  margin: 0 auto;
+}
+
+@media (max-width: 968px){ /* 968 = content width / 0.8 */
+  #header__content,
+  #nav__content,
+  #news__content,
+  #main__content,
+  #footer__content {
+    max-width: 80%;
+  }
+}
+
+.row {
+  width: 100%;
+  float: left;
+}
+
+.one_half {
+  width: 50%;
+  float: left;
+}
+
+.three_fourths {
+  width: 75%;
+  float: left;
+}
+
+.one_fourth {
+  width: 25%;
+  float: left;
+}
+
+@media (max-width: 968px){ /* 968 = content width / 0.8 */
+  .one_half, .three_fourths, .one_fourth {
+    width: 100%;
+  }
+}
